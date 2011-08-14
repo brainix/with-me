@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------#
-#   app.yaml                                                                   #
+#   handlers.py                                                                #
 #                                                                              #
 #   Copyright (c) 2011, Code A La Mode, original authors.                      #
 #                                                                              #
@@ -20,38 +20,33 @@
 #------------------------------------------------------------------------------#
 
 
-application: w-th-me
-version: 1
-runtime: python
-api_version: 1
+import logging
+import os
+
+from google.appengine.ext.webapp import template
+
+from config import DEBUG, TEMPLATES
+import base
 
 
-handlers:
-
-- url: /robots.txt
-  static_files: assets/robots.txt
-  upload: assets/robots.txt
-
-- url: /assets
-  static_dir: assets
-
-- url: /.*
-  script: main.py
+_log = logging.getLogger(__name__)
 
 
-skip_files:
+class NotFound(base.WebHandler):
+    """Request handler to serve a 404: Not Found error page."""
 
-# Default stuff:
-- ^(.*/)?app\.yaml
-- ^(.*/)?app\.yml
-- ^(.*/)?index\.yaml
-- ^(.*/)?index\.yml
-- ^(.*/)?#.*#
-- ^(.*/)?.*~
-- ^(.*/)?.*\.py[co]
-- ^(.*/)?.*/RCS/.*
-- ^(.*/)?\..*
+    def get(self, *args, **kwds):
+        """Someone has issued a GET request on a nonexistent URL."""
+        return self.serve_error(404)
 
-# with-me specific stuff:
-- ^(.*/)?.*\.swp$
-- ^(.*/)?IGNORE\.txt
+
+class Home(base.WebHandler):
+    """Request handler to serve the homepage."""
+
+    def get(self):
+        """Serve the homepage."""
+        path = os.path.join(TEMPLATES, 'home.html')
+        debug = DEBUG
+        title = ''
+        html = template.render(path, locals(), debug=debug)
+        self.response.out.write(html)
