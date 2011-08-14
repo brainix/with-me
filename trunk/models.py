@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------#
-#   app.yaml                                                                   #
+#   models.py                                                                  #
 #                                                                              #
 #   Copyright (c) 2011, Code A La Mode, original authors.                      #
 #                                                                              #
@@ -18,40 +18,3 @@
 #       You should have received a copy of the GNU General Public License      #
 #       along with with-me.  If not, see <http://www.gnu.org/licenses/>.       #
 #------------------------------------------------------------------------------#
-
-
-application: w-th-me
-version: 1
-runtime: python
-api_version: 1
-
-
-handlers:
-
-- url: /robots.txt
-  static_files: assets/robots.txt
-  upload: assets/robots.txt
-
-- url: /assets
-  static_dir: assets
-
-- url: /.*
-  script: main.py
-
-
-skip_files:
-
-# Default stuff:
-- ^(.*/)?app\.yaml
-- ^(.*/)?app\.yml
-- ^(.*/)?index\.yaml
-- ^(.*/)?index\.yml
-- ^(.*/)?#.*#
-- ^(.*/)?.*~
-- ^(.*/)?.*\.py[co]
-- ^(.*/)?.*/RCS/.*
-- ^(.*/)?\..*
-
-# with-me specific stuff:
-- ^(.*/)?.*\.swp$
-- ^(.*/)?IGNORE\.txt
