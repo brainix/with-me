@@ -19,11 +19,28 @@
  |      along with with-me.  If not, see <http://www.gnu.org/licenses/>.      |
 \*----------------------------------------------------------------------------*/
 
+/**
+ * script.js
+ *
+ * Main scripts for http://w-th.me/.
+ *
+ * @creator         nerdfiles
+ * @author          nerdfiles
+ * @copyright       Copyright(c) 2011, 2011
+ *                  by w-th.me
+ * @license         Creative Commons Attribution 2.0 Licence 
+ *                  http://creativecommons.org/licenses/by/2.0/
+ * @datetime        8-14-2011.1:50.pm.cst
+ * @lastmod         
+ *
+ * @site            http://w-th.me/
+ * @project         w-th-me
+ * @version         
+ * @since           
+ * @revision        
+ * @package         core
+ * @subpackage      behavior-layer
+ *
+ * @tested          all
+ */
 
-/*---------------------------------------------------------------------------*\
- |                                    $()                                    |
-\*---------------------------------------------------------------------------*/
-
-$(function() {
-    // Hooray, a page has been loaded!
-});
