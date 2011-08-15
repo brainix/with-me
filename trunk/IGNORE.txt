@@ -8,3 +8,6 @@
 .DS_Store
 Thumbs.db
 index.yaml
+
+.git
+.sass-cache

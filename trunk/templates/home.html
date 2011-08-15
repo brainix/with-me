@@ -24,9 +24,104 @@
 
 {% block content %}
 
-    <h3>Hello, World!</h3>
-    <p>
-        Hello, World!
-    </p>
+<div id="content" class="siteContent" role="main">
+  <div class="siteInner">
+
+    <form
+      id="formWithMe"
+      name="formWithMe"
+      action=""
+      method="post"
+      class="mod mod-form mod-formWithMe">
+
+      <fieldset class="formInputs">
+        <div class="fieldBlock entryBlock">
+          <div class="fieldLabel">
+            <div class="labelInner">
+              <label for="">I want to</label>
+            </div>
+          </div>
+          <div class="fieldInput">
+            <div class="inputInner">
+              <input 
+                id=""
+                name=""
+                type="text"
+                placeholder=""
+                tabindex="1" />
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      
+      <fieldset class="formControls">
+        <div class="fieldBlock">
+          <div class="fieldInput">
+            <div class="inputInner">
+              <button 
+                name="post" 
+                type="submit"
+                value="submission" 
+                class="btn submit"
+                tabindex="2">
+                
+                <span class="label">Other Button</span>
+                <span class="icon"></span>
+                <span class="overlay"></span>
+                
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="fieldBlock">
+          <div class="fieldInput">
+            <div class="inputInner">
+              <button 
+                name="post" 
+                type="submit"
+                value="submission" 
+                class="btn submit"
+                tabindex="2">
+                
+                <span class="label">Other Button</span>
+                <span class="icon"></span>
+                <span class="overlay"></span>
+                
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="fieldBlock submitBlock">
+          <div class="fieldInput">
+            <div class="inputInner">
+              <button 
+                name="post" 
+                type="submit"
+                value="submission" 
+                class="btn submit"
+                tabindex="2">
+                
+                <span class="label">Today</span>
+                <span class="icon"></span>
+                <span class="overlay"></span>
+                
+              </button>
+            </div>
+          </div>
+          <aside class="fieldNote">
+            <div class="noteInner">
+              <dl class="legend">
+                <dt>&#x203D;</dt>
+                <dd><small>indicates a required field.</small></dd>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </fieldset>
+    
+    </form>
+    
+  </div>
+</div><!-- End .site-content -->
 
 {% endblock %}

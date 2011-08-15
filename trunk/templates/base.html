@@ -19,34 +19,186 @@
  |      along with with-me.  If not, see <http://www.gnu.org/licenses/>.     |
 \*------------------------------------------------------------ {% endcomment %}
 
+<!DOCTYPE 
+  html 
+  public "✰" 
+  address="http://w-th.me/">
+   
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-<!DOCTYPE html 
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+
+<meta charset="utf-8" />
+<meta 
+  http-equiv="X-UA-Compatible" 
+  content="IE=edge,chrome=1" />
+<meta 
+  name="viewport" 
+  content="width=device-width, initial-scale=1.0" />
+
+<link 
+  rel="dns-prefetch" 
+  href="//ajax.googleapis.com/" />
+<link 
+  rel="dns-prefetch" 
+  href="//ajax.aspnetcdn.com/" />
+<link
+  rel="dns-prefetch"
+  href="//dummyimage.com/" />
+
+<title>{{ title }} : w-th.me</title>
+
+<meta 
+  name="description" 
+  content="" />
+<meta 
+  name="author" 
+  content="" />
+
+<link 
+  rel="stylesheet" 
+  href="_assets/css/style.css" />
+    
+<script src="_assets/js-lib/script.js/dist/script.min.js"></script>
+<script>
+  
+  // Modernizr
+  $script('//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js', 'modernizr');
+  window.Modernizr || document.write('<script src="_assets/js-lib/modernizr-2.0.6.min.js"><\/script>');
+  
+  // jQuery
+  $script('//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'jquery-min-js');
+  window.jQuery || document.write('<script src="_assets/js-lib/jquery-1.6.2.min.js"><\/script>');
+  
+</script>
+  
+</head>
+
+<body>
+
+<!--
 
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-        <title>w-th.me - {{ title }}</title>
-        <link type="text/css" rel="stylesheet" href="/assets/style.css" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    </head>
-    <body>
-        <div id="heading">
-            <h1><a href="/">w-th.me</a></h1>
-            <h2>{{ title }}</h2>
-        </div>
 
-        <div id="content">
-            {% block content %}{% endblock %}
-        </div>
 
-        <div id="footer">
-            <p>&copy; 2011 <a href="/">w-th.me</a></p>
-        </div>
 
-        <script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAAorxaUiGpnCkpbu7iWA5PBRQXsaUn3YvBJovhrjAuC8w4Xcl3SxQgueVziXJ8NI4DTP2JABlkr6ulJQ"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/script.js"></script>
-    </body>
+
+
+
+
+
+          This section has been intentionally left blank.
+
+
+
+
+
+
+
+
+
+
+-->
+
+<div class="siteContainer container">
+
+<div id="top"></div>
+
+<nav class="siteAccess accessibly-hide">
+  <ul>
+    <li class="contentAccess"><a href="#today" title="Today, I want to:">
+      <span class="example-prompt">Today, I want to,</span> 
+      <span class="example-container">
+        <span class="idiom">say,</span>
+        <span class="example">eat a pizza<span class="separator">:</span></span>
+      </span>
+    </a></li>
+    <li class="contentAccess"><a href="#top" title="Back to #top">Back to #top</a></li>
+    <li class="contentAccess"><a href="#content" title="Skip to #content">Skip to #content</a></li>
+    <li class="contentAccess"><a href="#search" title="Skip to #search">Skip to #search</a></li>
+    <li class="contentAccess"><a href="#navigation" title="Skip to #navigation">Skip to #navigation</a></li>
+    <li class="contentAccess"><a href="#footer" title="Skip to #footer">Skip to #footer</a></li>
+  </ul>
+</nav><!-- End .site-access -->
+
+<header id="header" class="siteHeader">
+  <div class="siteInner">
+  
+    <hgroup>
+      <div class="logo">
+        <img
+          src="http://dummyimage.com/75x75/ccc/fff"
+          title="w-th.me, simply and casually"
+          alt="logo" />
+      </div>
+      <h1 class="name">w-th.me</h1>
+      <h2 class="tagline">simply and casually</h2>
+    </hgroup>
+    
+    <!-- #search.site-search -->
+    <!-- #navigation.site-navigation -->
+    
+  </div>
+</header><!-- End .site-header -->
+
+{% block content %}
+  <!-- Block .site-content -->
+{% endblock %}
+
+<footer id="footer" class="site-footer">
+  <div class="site-inner">
+    <p>Copyright &copy; 2011, 2011. Creative Commons. <a href="http://validator.w3.org/check?uri=referer">html</a>, <a href="http://jigsaw.w3.org/css-validator/check?profile=css3&amp;uri=referer">css</a></p>
+  </div>
+</footer><!-- End .site-footer -->
+
+</div> <!-- End .site-container -->
+
+<!--
+
+
+
+
+
+
+
+
+
+
+          This section has been intentionally left blank.
+
+
+
+
+
+
+
+
+
+
+-->
+
+<script>
+  $script('//ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js', 'jquery-validate-min-js'); // (commented in plugins.js)
+  $script('_assets/js-lib/plugins.js', 'plugins-js');
+  $script('_assets/js/system.js', 'system-js');
+</script>
+
+<script>
+  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+  <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+</body>
+
 </html>
+

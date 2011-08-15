@@ -28,11 +28,27 @@ api_version: 1
 
 handlers:
 
+- url: /crossdomain.xml
+  static_files: assets/crossdomain.xml
+  upload: assets/crossdomain.xml
+
+- url: /humans.txt
+  static_files: assets/humans.txt
+  upload: assets/humans.txt
+  
+- url: /apple-touch-icon.png
+  static_files: assets/apple-touch-icon.png
+  upload: assets/apple-touch-icon.png
+
+- url: /favicon.ico
+  static_files: assets/favicon.ico
+  upload: assets/favicon.ico
+
 - url: /robots.txt
   static_files: assets/robots.txt
   upload: assets/robots.txt
 
-- url: /assets
+- url: /_assets
   static_dir: assets
 
 - url: /.*
