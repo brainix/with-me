@@ -60,10 +60,11 @@
 <meta 
   name="author" 
   content="" />
-
-<link 
-  rel="stylesheet" 
-  href="_assets/css/style.css" />
+  
+<link
+  rel="stylesheet"
+  href="_assets/css/style.css"
+  media="all" />
    
 <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 <script>
@@ -72,10 +73,10 @@
   
   Modernizr.load([
     {
-      load: '//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js',
+      load: ['//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'],
       complete: function () {
         if ( !window.jQuery ) {
-              Modernizr.load('_assets/js-lib/jquery-1.6.2.min.js');
+          Modernizr.load('_assets/js-lib/jquery-1.6.2.min.js');
         }
         
         Modernizr.load('//ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js', 'jquery-validate-min-js'); // (commented in plugins.js)
@@ -151,10 +152,12 @@
   
     <hgroup>
       <div class="logo">
-        <img
-          src="http://dummyimage.com/75x75/ccc/fff"
-          title="w-th.me, simply and casually"
-          alt="logo" />
+        <a href=".">
+          <img
+            src="http://dummyimage.com/75x75/ccc/fff"
+            title="w-th.me, simply and casually"
+            alt="logo" />
+        </a>
       </div>
       <h1 class="name">w-th.me</h1>
       <h2 class="tagline">simply and casually</h2>
