@@ -1,6 +1,6 @@
 # with-me
 
-Some old project Raj and I started thinking on. It involved "valid" or "cool" URIs likes
+Some old project Raj and I started thinking on. It involved "valid" or "cool" URIs links:
 
 http://with.me/tacos/ (Who wants to eat tacos with me?)
 http://with.me/200/kites/, http://with.me/400/parrots/ (store; searching URLs for quantities)
